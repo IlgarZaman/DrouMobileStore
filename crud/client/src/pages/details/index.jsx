@@ -73,7 +73,7 @@ const DetailPage = ({ card, setCard }) => {
       }
     });
     if (favoriteCound != 0) {
-      alert("Username or mail is use.");
+      alert("The product has already been added to favorites...");
       favoriteCound = 0;
     } else {
       favoriteArr.push(facoriteObj);

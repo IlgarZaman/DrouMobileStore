@@ -9,13 +9,13 @@ const Store = () => {
     navigate("/");
   };
   const rerender = () => {
-    navigate("/store-npm i react-iconspage");
+    navigate("/store-page");
   };
 
   console.log(cardData);
   return (
-    <div className="favoriteMainDiv">
-      <div className="favoriteCenterDiv">
+    <div className="storeMainDiv">
+      <div className="storeCenterDiv">
         {cardData.map((e) => {
           return (
             <Card
@@ -38,30 +38,28 @@ const Store = () => {
               <div style={{ display: "flex" }}>
                 <div className="textDiv">
                   <h3>{e.name}</h3>
-                  <p className="favoritePTag">Price: {e.price}</p>
-                  <p className="favoriteDescription">
+                  <p className="storePTag">Price: {e.price}</p>
+                  <p className="storeDescription">
                     Description: {e.description}
                   </p>
                 </div>
-                <Button onClick={navigatehome} className="favoriteGoHomeBtn">
+                <Button onClick={navigatehome} className="storeGoHomeBtn">
                   Go Home
                 </Button>
               </div>
               <Button
+              type="primary" danger
                 onClick={() => {
                   console.log(e);
                   let removedArray = JSON.parse(
                     localStorage.getItem("card")
                   )?.filter((elem) => elem.id !== e.id);
-                  localStorage.setItem(
-                    "favorite",
-                    JSON.stringify(removedArray)
-                  );
+                  localStorage.setItem("card", JSON.stringify(removedArray));
                   rerender();
                 }}
-                className="favoriteGoHomeBtn"
+                className="storeRemoveBtn"
               >
-                Remove Favorites
+                Remove Basket
               </Button>
             </Card>
           );
