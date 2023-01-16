@@ -23,7 +23,7 @@ function App() {
         <Route path="/store-page" element={<Store />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {/* <ScrollButton /> */}
+      <ScrollButton />
 
       <Footer />
     </div>
