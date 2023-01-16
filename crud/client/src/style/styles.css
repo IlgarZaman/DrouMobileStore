@@ -1,0 +1,107 @@
+/* #app {
+  height: 100%;
+} */
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.swiper-pagination-bullet {
+  background-color: #e52e06;
+}
+
+.swiper {
+  width: 93%;
+  height: 100%;
+  margin: 50px 0 50px 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+.swiperImgDiv {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiperImgTwo {
+  display: none;
+  /* margin-left: 55px; */
+}
+.swiperSlider {
+  border-radius: 8px;
+  box-shadow: inset 0 -3em 3em rgba(150, 144, 144, 0.1),
+    0 0 0 2px rgb(238, 236, 236), 0.3em 0.3em 1em rgba(164, 159, 159, 0.3);
+  height: 300px;
+}
+.swiperSlider :hover > .swiperImgDiv .swiperImgOne {
+  display: none;
+
+}
+.swiperSlider :hover > .swiperImgDiv .swiperImgTwo {
+  display: block;
+}
+
+.latestProductMainDiv {
+  width: 100%;
+}
+.mySwiper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.mySwiper h4 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+.mySwiper h4:hover {
+  color: #e52e06;
+  transition: 0.8s;
+}
+.mySwiper h3 {
+  color: #e52e06;
+  font-size: 18px;
+  font-weight: bold;
+}
+.latestMainDiv {
+  transition: all 0.5s;
+}
+.latestLink {
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.8s;
+  color: #333;
+}
+.latestLink:hover {
+  color: red;
+}
+.latestHone {
+  color: #323232;
+  font-size: 30px;
+  font-weight: 500;
+}

@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.mainDiv {
+  h2{
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  }
+  .space{
+margin-top: 2px;
+  }
+  .centerDiv {
+    transition: 1s;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .rightText {
+    .logInSignUp {
+      margin-left: 30px;
+    }
+  }
+  .topHeader {
+    display: flex;
+    justify-content: space-between;
+    .leftText {
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+          a {
+            padding-left: 10px;
+            line-height: inherit;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .underline {
+    transition: 1s;
+
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid gray;
+    opacity: 20%;
+  }
+
+  .headerBottomDiv {
+    transition: 1s;
+
+    width: 100%;
+
+    .bottomDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        a {
+          img {
+            width: 60%;
+          }
+        }
+      }
+      .menuDiv {
+        display: flex;
+        div {
+          margin: 0 20px 0 0;
+        }
+      }
+      .icons {
+        i {
+          margin: 0 20px 0 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  a {
+    color: black;
+  }
+}
+
+.electonics {
+  .ant-dropdown-menu-vertical {
+    display: flex;
+    li {
+      margin: 0 100px 0 0;
+    }
+  }
+}
+.headerBottomDivScroll {
+  transform: scale(1.005);
+
+  background-color: #f9f9f9;
+  width: 100%;
+  transition: 1s;
+  position: fixed;
+  z-index: 999;
+  height: 70px;
+  box-shadow: -2px 8px 18px 7px rgba(163, 149, 149, 0.53);
+  -webkit-box-shadow: -2px 8px 18px 7px rgba(163, 149, 149, 0.53);
+  -moz-box-shadow: -2px 8px 18px 7px rgba(163, 149, 149, 0.53);
+  .bottomDiv {
+    height: 40px;
+    transform: scale(1.005);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      a {
+        img {
+          width: 60%;
+        }
+      }
+    }
+    .menuDiv {
+      display: flex;
+      div {
+        margin: 0 20px 0 0;
+      }
+    }
+    .icons {
+      i {
+        margin: 0 20px 0 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.noneTopHeader {
+  transition: 1s;
+  display: none;
+}
+// -----------------Timer------------------
+.showCountMainDiv{
+  width: 100%;
+ .showCountCenterDiv{
+  max-width: 1300px;
+  margin: 0 auto;
+  .show-counter{
+    display: flex;
+  }
+ } 
+}
+i{
+  font-size: 20px;
+}

@@ -1,0 +1,33 @@
+.errorPageMainDiv {
+  width: 100%;
+  height: 82vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .errorPageCenterDiv {
+    .errorLogo {
+      img {
+        width: 166px;
+        font-size: 38px;
+        font-weight: bold;
+        color: #444;
+        margin: 50px 0;
+      }
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      margin: 22px 0 26px;
+      color: #323232;
+    }
+    p {
+      margin: 0px 80px 30px;
+      font-size: 18px;
+      color: #444;
+      line-height: 1.67;
+      font-weight: 400;
+    }
+  }
+}

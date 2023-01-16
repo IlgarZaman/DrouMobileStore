@@ -1,0 +1,38 @@
+.favoriteMainDiv {
+  max-width: 1300px;
+  margin: 0px auto;
+
+  .favoriteCenterDiv {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    position: relative;
+    .favoriteGoHomeBtn {
+      position: absolute;
+      right: 35px;
+      top: 90px;
+    }
+    .favoriteGoHomeRemove {
+      position: absolute;
+      right: 10px;
+      bottom: 100px;
+    }
+    .textDiv {
+    
+      h3 {
+        font-weight: 500;
+        font-size: 30px;
+      }
+      .favoriteDescription {
+        width: 70%;
+      }
+      .favoritePTag {
+        color: #e52e06;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+}

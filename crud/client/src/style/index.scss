@@ -1,0 +1,612 @@
+// -------------Carusel------------
+.bck-div {
+  background-color: #f9f9f9;
+  Link {
+    cursor: pointer;
+  }
+  .homeMainDiv {
+    max-width: 1300px;
+    margin: 0 auto;
+    .firstCarusel {
+      width: 100%;
+      height: 520px;
+      background-image: url("https://cdn.shopify.com/s/files/1/1152/4590/files/x2.jpg?v=1671082778");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .firstCaruselContent {
+        margin: 100px 0;
+        width: 50%;
+        h4 {
+          color: #e52e06;
+          margin: 0 0 10px;
+          font-size: 24px;
+          font-weight: 400;
+        }
+        h1 {
+          margin: 0 0 20px;
+          font-size: 56px;
+          font-weight: 500;
+          line-height: 64px;
+        }
+        p {
+          margin: 0 0 20px;
+          width: 83%;
+          font-size: 18px;
+          line-height: 36px;
+          color: #333;
+        }
+        div {
+          .caruselBtn {
+            display: inline-block;
+            padding: 14px 30px 16px;
+            border-radius: 50px;
+            background-color: #e52e06;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            transition: all 0.5s;
+            &:hover {
+              background-color: #333333;
+            }
+          }
+        }
+      }
+    }
+  }
+  // --------------Trending categories--------------------------
+  .secondCarusel {
+    width: 100%;
+    height: 520px;
+    background-image: url("https://cdn.shopify.com/s/files/1/1152/4590/files/x1.jpg?v=1671082805");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .secondCaruselContent {
+      margin: 100px 0;
+      width: 50%;
+      h4 {
+        color: #e52e06;
+        margin: 0 0 10px;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      h1 {
+        margin: 0 0 20px;
+        font-size: 56px;
+        font-weight: 500;
+        line-height: 64px;
+      }
+      p {
+        margin: 0 0 20px;
+        width: 83%;
+        font-size: 18px;
+        line-height: 36px;
+        color: #333;
+      }
+      div {
+        .caruselBtn {
+          display: inline-block;
+          padding: 14px 30px 16px;
+          border-radius: 50px;
+          background-color: #e52e06;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          border: none;
+          transition: all 0.5s;
+          &:hover {
+            background-color: #333333;
+          }
+        }
+      }
+    }
+  }
+  :where(.css-dev-only-do-not-override-sk7ap8).ant-carousel
+    .slick-dots
+    li
+    button::after {
+    position: absolute;
+    inset: -2px;
+    content: "";
+    background-color: #e52e06;
+    border-radius: 20px;
+  }
+}
+.trendingCategoriesCenter {
+  width: 100%;
+  .homeMainDiv {
+    max-width: 1300px;
+    margin: 0 auto;
+    .trendingCategoriesh2 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 1;
+      margin: 100px 0 0 0;
+    }
+    .trendingCategorieshAllDiv {
+      display: flex;
+      margin: 100px 0;
+      .trandingCategoryDiv {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+        a:link {
+          text-decoration: none;
+        }
+        a:visited {
+          text-decoration: none;
+        }
+        a {
+          color: black;
+        }
+        .cardDivParent {
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          position: relative;
+          padding: 20px;
+          border: 1px solid rgb(250, 241, 241);
+          .cardDivChild {
+            transition: all 0.2s;
+            transition: transform 0.6s;
+            width: 100%;
+            height: 90%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+        h3 {
+          margin: 10px 0 0 0;
+          opacity: 70%;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+// -----------------shop now cards-----------------------
+.shopNowCards {
+  width: 100%;
+  .homeMainDiv {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .hoverDiv1:hover > .firstCardDivChild img {
+      transform: scale(1.09);
+      transform-origin: 50% 50%;
+    }
+    .hoverDiv1:hover
+      > .firstCardDivChild
+      .firstDivText
+      .firstDivBtnDiv
+      > button {
+      background-color: #333333;
+    }
+
+    .firstCardDivParent {
+      position: relative;
+      width: 48%;
+      height: 350px;
+      .firstCardDivChild {
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 350px;
+          transition: transform 0.8s;
+        }
+      }
+      .firstDivText {
+        text-align: center;
+        position: absolute;
+        bottom: 200px;
+        left: 200px;
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          color: #333333;
+        }
+        h2 {
+          margin: 15px 0;
+          font-weight: 500;
+          font-size: 20px;
+          color: #333333;
+        }
+        .firstDivBtnDiv {
+          box-sizing: border-box;
+          text-align: center;
+          button {
+            display: inline-block;
+            padding: 14px 30px 16px;
+            border-radius: 50px;
+            background-color: #e52e06;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    .hoverDiv2:hover > .secondCardDivChild img {
+      transform: scale(1.09);
+      transform-origin: 50% 50%;
+    }
+    .hoverDiv2:hover > .secondDivText .seconDivBtnDiv > button {
+      background-color: #333333;
+    }
+    .secondCardDivParent {
+      position: relative;
+      width: 48%;
+      height: 350px;
+      .secondCardDivChild {
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 350px;
+          transition: transform 0.8s;
+        }
+      }
+      .secondDivText {
+        text-align: center;
+        position: absolute;
+        bottom: 200px;
+        left: 190px;
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          color: #333333;
+        }
+        h2 {
+          margin: 15px 0;
+          font-weight: 500;
+          font-size: 20px;
+          color: #333333;
+        }
+        .seconDivBtnDiv {
+          box-sizing: border-box;
+          text-align: center;
+          button {
+            display: inline-block;
+            padding: 14px 30px 16px;
+            border-radius: 50px;
+            background-color: #e52e06;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+button {
+  cursor: pointer;
+}
+
+// -----------------timer-------------------
+.showCountMainDiv {
+  margin: 80px 0;
+  width: 100%;
+  height: 500px;
+  background-image: url("https://cdn.shopify.com/s/files/1/1152/4590/files/main-banner-01.jpg?v=1671085933");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .showCountCenterDiv {
+    max-width: 1300px;
+    margin: 0 auto;
+    .textAndTimeDiv {
+      width: 50%;
+      padding: 70px 0;
+
+      text-align: center;
+      .hurryUp {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 14px;
+        background: #e52e06;
+        display: inline-block;
+        padding: 14px 27px;
+        box-sizing: border-box;
+        text-align: center;
+        -webkit-box-direction: reverse;
+      }
+      .timeTextDiv {
+        text-align: center;
+        h2 {
+          font-size: 46px;
+          line-height: 40px;
+          color: #333;
+          margin-bottom: 14px;
+          font-weight: 700;
+        }
+      }
+      .show-counter {
+        margin: 50px 0 0 0;
+
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        .time {
+          background-color: #e7ebee;
+          font-weight: bold;
+          font-size: 18px;
+          box-shadow: 0px 2px 14px -1px rgba(201, 195, 195, 0.8);
+          -webkit-box-shadow: 0px 2px 14px -1px rgba(194, 188, 188, 0.8);
+          -moz-box-shadow: 0px 2px 14px -1px rgba(199, 191, 191, 0.8);
+          width: 80px;
+          height: 80px;
+          border-radius: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .timeShopNowBtn {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 21px;
+        color: #333;
+        transition: 0.5s;
+        &:hover {
+          color: #e52e06;
+        }
+      }
+    }
+  }
+}
+// ----Three Category
+
+.ThreeCategorySorterMAinDiv {
+  max-width: 1300px;
+  margin: 0 auto;
+  .ThreeCategorySorterCenterDiv {
+    margin: 0 0 60px 0;
+    .hreeCategorySorterTitleAndButton {
+      display: flex;
+      justify-content: space-between;
+      .hreeCategorySorterTitleText {
+        margin: 50px 0;
+        h2 {
+          font-size: 30px;
+          font-weight: bold;
+          line-height: 1;
+          color: #323232;
+        }
+      }
+      .buttonColorBlack {
+        color: black;
+      }
+      .buttonColorRed {
+        color: #e52e06;
+      }
+
+      .hreeCategorySorterTitleButtons {
+        display: flex;
+        column-gap: 30px;
+
+        button {
+          background-color: white;
+          border: none;
+          border: none;
+          font-size: 15px;
+          line-height: 1.2;
+          font-weight: 700;
+        }
+      }
+    }
+    .cardsMainDiv {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .cards {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        .secondivforcards {
+          text-align: center;
+          
+          .threeCategoryTextDiv {
+            text-align: center;
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------Blog And Events
+.BlogAndEventsMainDiv {
+  width: 100%;
+  .BlogAndEventsCenterDiv {
+    max-width: 1300px;
+    margin: 0 auto;
+    .BlogAndEventsTextDiv {
+      display: flex;
+      justify-content: space-between;
+      margin: 150px 0 0 0;
+
+      h2 {
+        color: #333;
+      }
+    }
+
+    .BlogAndEventsCardDiv {
+      margin: 50px 0;
+      display: flex;
+      column-gap: 40px;
+      justify-content: center;
+      .BlogAndEventsFirstDivParent {
+        width: 400px;
+        height: 250px;
+        overflow: hidden;
+
+        .BlogAndEventsFirstDiv {
+          width: 100%;
+          transition: transform 1s;
+          height: 100%;
+          background-image: url("https://cdn.shopify.com/s/files/1/1152/4590/articles/b1_900fbf82-fae7-4e28-874c-972c8bffb24b_grande.jpg?v=1671200755");
+          background-position: center;
+          background-size: cover;
+        }
+
+        .BlogAndEventsSecondDiv {
+          background-image: url("https://cdn.shopify.com/s/files/1/1152/4590/articles/b2_c60efb49-a6cd-459c-b3a7-468faea04a4a_grande.jpg?v=1671200967");
+          background-position: center;
+          background-size: cover;
+          transition: transform 1s;
+          width: 100%;
+          height: 100%;
+        }
+        .BlogAndEventsThirdDiv {
+          background-image: url("https://cdn.shopify.com/s/files/1/1152/4590/articles/04_grande.jpg?v=1671201487");
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          transition: transform 1s;
+
+          height: 100%;
+        }
+      }
+      .blogCardText {
+        margin: 20px 0;
+        display: flex;
+        column-gap: 10px;
+        transition: all 0.8s;
+        &:hover {
+          color: #e52e06;
+        }
+      }
+      .BlogAndEventsFirstDivParent:hover .BlogAndEventsFirstDiv,
+      .BlogAndEventsFirstDivParent:hover .BlogAndEventsSecondDiv,
+      .BlogAndEventsFirstDivParent:hover .BlogAndEventsThirdDiv,
+      .BlogAndEventsFirstDivParent:focus .BlogAndEventsFirstDiv,
+      .BlogAndEventsFirstDivParent:focus .BlogAndEventsSecondDiv,
+      .BlogAndEventsFirstDivParent:focus .BlogAndEventsThirdDiv {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// -----Big Discount-----
+.bigDiscountMain {
+  max-width: 1300px;
+  margin: 0 auto;
+  .parentDicountDiv {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    .childDicountDiv {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 400px;
+        transition: transform 0.8s;
+      }
+    }
+    .bigDiscoundText {
+      position: relative;
+      bottom: 350px;
+      text-align: center;
+      span {
+        display: block;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #666;
+        line-height: 24px;
+        font-style: normal;
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 4px 0 5px;
+        font-weight: 400;
+        color: #323232;
+      }
+      h3 {
+        font-weight: bold;
+        color: #e4573d;
+        font-size: 22px;
+        margin: 0px 0 10px;
+      }
+      .bigDiscoundDiv {
+        width: 100%;
+        .bigDiscoundBtn {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 700;
+          margin-bottom: 14px;
+          background: #e52e06;
+          display: inline-block;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          text-align: center;
+          -webkit-box-direction: reverse;
+          border-radius: 50px;
+          border: none;
+        }
+      }
+    }
+  }
+  .parentDicountDiv:hover > .childDicountDiv img {
+    transform: scale(1.04);
+    transform-origin: 50% 50%;
+  }
+  .parentDicountDiv:hover > .bigDiscoundText .bigDiscoundDiv > button {
+    opacity: 70%;
+  }
+}
+
+// ------information------
+.informationMainDiv {
+  margin: 80px 0;
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  .informationCenterDiv {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .boxInformationDiv {
+      width: 23%;
+      text-align: center;
+      img {
+        vertical-align: middle;
+        border-style: none;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 12px;
+        color: #323232;
+      }
+      p {
+        font-size: 18px;
+        color: #444;
+        font-weight: 400;
+        line-height: 1.74;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.scrollMaiinDiv {
+  overflow-y: scroll;
+  button {
+    position: fixed;
+    border: none;
+    background-color: none;
+    left: 90%;
+    top: 90%;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 9999999;
+    cursor: pointer;
+    color: #e52e;
+    border-radius: 50%;
+  }
+}

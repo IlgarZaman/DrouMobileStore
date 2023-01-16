@@ -1,0 +1,22 @@
+.allProductMainDiv {
+  max-width: 1300px;
+  margin: 0 auto;
+  .inputFlexDiv {
+    display: flex;
+justify-content: center;
+    .textAndInput {
+      h1 {
+        font-weight: 700;
+        font-size: 60px;
+        padding-top: 40px;
+      }
+    }
+  }
+  .allProductCenterDiv {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
